@@ -157,9 +157,9 @@ namespace RaspReceiver1
             }
             catch(Exception e)
             {
-                Console.WriteLine("*************************");
+                Console.WriteLine("***************************");
                 Console.WriteLine(e.Message);
-                Console.WriteLine("*************************");
+                Console.WriteLine("***************************");
             }
            
         }

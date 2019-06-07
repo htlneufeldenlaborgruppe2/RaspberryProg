@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using Microsoft.Azure.Devices.Client;
 using System.IO.Ports;
 using System.Collections.Generic;
@@ -152,7 +153,7 @@ namespace RaspReceiver1
                 }
 
                 var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-                Console.WriteLine("Response" + new StreamReader(httpResponse.GetResponseStream()).ReadToEnd());
+                Console.WriteLine("Response\n" + new StreamReader(httpResponse.GetResponseStream()).ReadToEnd());
             }
             catch(Exception e)
             {
